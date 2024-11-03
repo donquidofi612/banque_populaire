@@ -14,15 +14,9 @@ const getImagePath = (imageName: any) => {
 }
 
 onMounted(async () => {
-const { $router } = useNuxtApp()
 
-if ($router.currentRoute.value.path !== '/auth/login') {
-  Swal.fire('Erreur', "Votre compte est temporairement bloqué. Vous devez vous acquittez d'un montant de 60 000 € afin de débloquer le compte.\n" +
-      "\n" +
-      "Merci de contacter votre conseiller pour finaliser cette opération", 'error');
 
-}
-  
+
 });
 
 useHead({
